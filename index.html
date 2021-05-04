@@ -20,23 +20,25 @@
     <div class="container header">
     <nav class="list">
       <a class="logo" href="./index.html">Web<span class="logo-studio-black">Studio</span></a>
+      <!-- List-nav-->
         <ul class="list-nav flex">
-          <li class="item-nav"><a href="./portfolio.html" class="current link">Студия</a></li>
-          <li class="item-nav"><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li class="item-nav"><a href="" class="link">Контакты</a></li>
+          <li class="list-nav__item"><a href="./portfolio.html" class="list-nav__current list-nav__link">Студия</a></li>
+          <li class="list-nav__item"><a href="./portfolio.html" class="list-nav__link">Портфолио</a></li>
+          <li class="list-nav__item"><a href="" class="list-nav__link">Контакты</a></li>
         </ul>
       </nav>
+      <!-- Contact-nav-->
         <ul class="contact-nav flex">
-          <li class="item-nav">
-            <a class="email-link" href="mailto:info@devstudio.coma" target="_blank" rel="noopener noreferrer">
+          <li class="contact-nav__item">
+            <a class="contact-nav__email" href="mailto:info@devstudio.coma" target="_blank" rel="noopener noreferrer">
               <svg class="icon-email" width="16" height="12">
                 <use href="./imeges/sprite.nav.svg#icon-email"></use>
               </svg>
               info@devstudio.coma
             </a>
           </li>
-          <li class="item-nav">
-            <a class="telephon-link" href="tel:+380961111111"  target="_blank"
+          <li class="contact-nav__item">
+            <a class="contact-nav__telephon" href="tel:+380961111111"  target="_blank"
             rel="noopener noreferrer">
             <svg class="icon-telephone" width="10" height="16">
               <use href="./imeges/sprite.nav.svg#icon-smartphone"></use>
@@ -47,41 +49,44 @@
         </ul>
     </div>
   </header>
-    <!--Первая секция. Эффективные решения-->
+  
   <main>
+      <!-- Hero Первая секция. Эффективные решения-->
+      
     <section class="section">
       <div class="container">
-      <h1 class="section-hero">Эффективные решения <br />для вашего бизнеса</h1>
-				<button class="section-button" type="button" data-modal-open>Заказать услугу</button>
+      <h1 class="section__hero">Эффективные решения <br />для вашего бизнеса</h1>
+				<button class="section__button" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     
     <!--Вторая секция. Наши особености-->
+
     <section class="main-section">    
       <div class="container">
             <h2 class="visually-hidden">Наши особености</h2>
         <ul class="main-list">
-          <li class="item icon-antenna">
-            <h3 class="main-title">Внимание к деталям</h3>
-              <p class="main-text">
+          <li class="main-list__item main-list__icon-antenna">
+            <h3 class="main-list__title">Внимание к деталям</h3>
+              <p class="main-list__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
           </li>
-          <li class="item icon-clock">
-            <h3 class="main-title">Пунктуальность</h3>
-              <p class="main-text">
+          <li class="main-list__item main-list__icon-clock">
+            <h3 class="main-list__title">Пунктуальность</h3>
+              <p class="main-list__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
           </li>
-          <li class="item icon-diagram">
-            <h3 class="main-title">Планирование</h3>
-              <p class="main-text">
+          <li class="main-list__item main-list__icon-diagram">
+            <h3 class="main-list__title">Планирование</h3>
+              <p class="main-list__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
           </li>
-          <li class="item icon-astronaut">
-            <h3 class="main-title">Современные технологии</h3>
-              <p class="main-text">
+          <li class="main-list__item main-list__icon-astronaut">
+            <h3 class="main-list__title">Современные технологии</h3>
+              <p class="main-list__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
           </li>
@@ -91,42 +96,43 @@
         <!--Третья секция. Чем мы занимаемся-->
     <section class="what-we-do">
       <div class="container">
-      <h2 class="title-command">Чем мы занимаемся</h2>
-        <ul class="gadget-list">
-          <li class="link-gadget">
+      <h2 class="container__title">Чем мы занимаемся</h2>
+        <ul class="container__gadget-list">
+          <li class="container__link-gadget">
 
-            <div class="box-jobs">
+            <div class="container__jobs">
             <img src="imeges/box.1.jpg" alt="man working" width="370">
-            <div class="text-gadget">
-            <p class="gadget-box">Десктопные приложения</p>
+            <div class="container__text">
+            <p class="container__gadget-box">Десктопные приложения</p>
             </div>
             </div>
 
          </li>
-          <li class="link-gadget">
+          <li class="container__link-gadget">
 
-            <div class="box-jobs">
+            <div class="container__jobs">
             <img src="imeges/box.2.jpg" alt="telephone in hand" width="370">
-            <div class="text-gadget">
-            <p class="gadget-box">Мобильные приложения</p>
+            <div class="container__text">
+            <p class="container__gadget-box">Мобильные приложения</p>
             </div>
             </div>
 
           </li>
-          <li class="link-gadget">
+          <li class="container__link-gadget">
 
-            <div class="box-jobs">
+            <div class="container__jobs">
             <img src="imeges/box.3.jpg" alt="draw in a gadget" width="370">
-            <div class="text-gadget">
-            <p class="gadget-box">Дизайнерские решения</p>
+            <div class="container__text">
+            <p class="container__gadget-box">Дизайнерские решения</p>
             </div>
             </div>
-
          </li>
         </ul>
       </div>
     </section>
+    
       <!--Четвёртая секция. Наша команда-->
+
     <section class="section-command">
       <div class="container">
       <h2  class="title-command">Наша команда</h2>
@@ -464,14 +470,14 @@
           cols="30" rows="10" placeholder="Введите текст"></textarea>
           </div>
          
-          <div class="form-field">
+          <div class="form-checkbox">
           <label class="label-box"
           for="accept">
           <input class="checkbox" type="checkbox" name="accept" id="accept"/>
           <span class="box-icon"></span>
           
           Соглашаюсь с рассылкой и принимаю 
-          <a href class="modal-link">Условия договора</a>
+          <a href class="modal-link"> Условия договора</a>
           </label>
           </div>
 
