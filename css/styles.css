@@ -79,9 +79,7 @@ p
   color: var(--logo-header-color);
 }
 
-.logo-studio-white {
-  color: var(--bg-color);
-}
+
 
 /*  List-nav */
 
@@ -607,20 +605,6 @@ p
 }
 
 
-.item-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-}
-
-
-
-.item-name > p {
-  line-height: 1.87;
-  color: var(--main-text-color);
-}
 
           /* button  PORTFOLIO*/
 
@@ -675,6 +659,22 @@ button {
   
 }
 
+.item-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+
+
+.item-name > p {
+  line-height: 1.87;
+  color: var(--main-text-color);
+}
+
+
 .item-button button:hover,
 .item-button button:focus {
   color: var(--bg-color);
@@ -699,13 +699,65 @@ button {
   
 }
 
-              /*footer*/
+              /*Footer*/
 
-.footer-container .container {
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-color-section);
+  
+}
+
+
+.footer-list {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 
+}
+
+.footer-blok {
+  flex-basis: calc((50% - 45px) / 2);
+}
+
+.footer-blok:last-child {
+  flex-basis: calc(50% - 15px);
+}
+
+/*   logo  */
+
+.logo {
+  display: block;
+  width: 145px;
+  margin-bottom: 20px;
+}
+
+.logo-studio-white {
+  color: var(--bg-color);
+}
+
+/*  Address footer  */
+
+.addres-footer {
+  width: 231px;
+  display: block;
+}
+
+.address-footer__contact  {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--bg-color);
+}
+
+.address-footer__nav {
+	margin-bottom: 9px;
+}
+
+
+
+.address-footer__link + .address-footer__link {
+	margin-top: 9px;
 }
 
 .icon.foot {
@@ -719,68 +771,10 @@ button {
 
 
 
-.footer-blok {
-  flex-basis: calc((50% - 45px) / 2);
-
-}
-
-.footer-blok:last-child {
-  flex-basis: calc(50% - 15px);
-}
-
-
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--bg-color-section);
-  
-}
-
-
-.footer-list .logo {
-  display: block;
-  width: 145px;
-  margin-bottom: 20px;
-}
-
-.contact-nav-color  {
-  font-size: 14px;
-  line-height: 1.71;
-  font-style: normal;
-  color: var(--bg-color);
-}
-
-
-.addres-footer {
-  width: 231px;
-  display: block;
-
-}
-
-.address-nav {
-	margin-bottom: 9px;
-}
-
-.contact-nav .link-footer + .link-footer {
-	margin-top: 9px;
-}
-
-
-.footer-list .footer {
-  display: block;
-  flex-direction: column;
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
-  color: var(--bg-adress-color)
-}
 
 
 
-.footer-list {
-  display: flex;
-  
-}
+
 
 .welcom-list {
   display: block;
