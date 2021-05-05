@@ -20,14 +20,18 @@
     <div class="container header">
     <nav class="list">
       <a class="logo" href="./index.html">Web<span class="logo-studio-black">Studio</span></a>
+
       <!-- List-nav-->
+
         <ul class="list-nav flex">
           <li class="list-nav__item"><a href="./portfolio.html" class="list-nav__current list-nav__link">Студия</a></li>
           <li class="list-nav__item"><a href="./portfolio.html" class="list-nav__link">Портфолио</a></li>
           <li class="list-nav__item"><a href="" class="list-nav__link">Контакты</a></li>
         </ul>
       </nav>
+
       <!-- Contact-nav-->
+
         <ul class="contact-nav flex">
           <li class="contact-nav__item">
             <a class="contact-nav__email" href="mailto:info@devstudio.coma" target="_blank" rel="noopener noreferrer">
@@ -352,9 +356,9 @@
             <div class="address-footer">
                 <address class="address-footer__contact">
                   <p class="address-footer__nav">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="contact-nav footer">
-                  <li class="address-footer__link"><a href="mailto:info@example.com">info@example.com</a></li>
-                  <li class="link"><a href="tel:+380991111111">+380991111111</a></li>
+                <ul class="contact-nav">
+                  <li class="contact-nav__link"><a class="contact-nav__mail" href="mailto:info@example.com">info@example.com</a></li>
+                  <li class="contact-nav__link"><a class="contact-nav__tel" href="tel:+380991111111">+380991111111</a></li>
                 </ul>
               </address>
             </div>
@@ -363,29 +367,29 @@
           <h3 class="welcom-page"> ПРИСОЕДИНЯЙТЕСЬ </h3>
             <ul class="icon-social">
               <li class="icon-social__item">
-                <a href="" class="icon-social__link" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon foot">
+                <a href="" class="icon-social__link  icon-social__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon-social__icon  icon-social__icon--fill">
                       <use href="./imeges/sprite.svg#icon-instagram"></use>
                     </svg>
                 </a>
               </li>
               <li class="icon-social__item">
-                <a href="" class="icon-social__link" target="_blank" rel="noopener     noreferrer">
-                  <svg class="icon foot">
+                <a href="" class="icon-social__link icon-social__link--bgcolor" target="_blank" rel="noopener     noreferrer">
+                  <svg class="icon-social__icon icon-social__icon--fill">
                     <use href="./imeges/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-social__item">
-                  <a href="" class="icon-social__link" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon foot">
+                  <a href="" class="icon-social__link icon-social__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon-social__icon icon-social__icon--fill">
                       <use href="./imeges/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
               </li>
               <li class="icon-social__item">
-                  <a href="" class="icon-social__link" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon foot">
+                  <a href="" class="icon-social__link icon-social__link--bgcolor" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon-social__icon icon-social__icon--fill">
                       <use href="./imeges/sprite.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -394,16 +398,17 @@
         </div>
         <div class="subscribe-list footer-blok">
           <form class="footer-form">
-            <h3 class="sign-form">Подпишитесь на рассылку</h3>
+            <h3 class="footer-form__sign">Подпишитесь на рассылку</h3>
             <div class="mail-form">
-            
-            <input type="e_mail" name="e_mail" id="e_mail" placeholder="E-mail">
-            <button type="submit">Подписаться</button>
+              <input class="mail-form__email" type="e_mail" name="e_mail" id="e_mail" placeholder="E-mail">
+              <button class="mail-form__button" type="submit">Подписаться</button>
             </div>
           </form>
         </div>
       </div>
     </footer>
+
+      <!--Modal winddow-->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
