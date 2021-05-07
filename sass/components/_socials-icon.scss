@@ -19,13 +19,15 @@
   border-radius: 50%;
   background-color: var(--bg-color);
   transition: background-color, fill  250ms var(--animation);
-}
 
-.icon-social__link:hover,
-.icon-social__link:focus {
+  &:hover,
+  &:focus {
   background-color: var(--accent-link-color);
 
+  }
+
 }
+
 
 
 .icon-social__link:hover .icon-social__icon,

@@ -16,13 +16,15 @@
   font: inherit;
   transition: fill 250ms var(--animation);
 
-}
-
-.close-modal:hover,
-.close-modal:focus {
+  &:hover,
+  &:focus {
   fill: var(--accent-link-color);
   border: 1px solid var(--accent-link-color);
+  }
+
+
 }
+
 
 .close-modal__icon {
   width: 11px;

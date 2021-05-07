@@ -44,12 +44,13 @@
   padding-bottom: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
+  
+  &:focus {
+    border: 1px solid var(--accent-link-color);
+   }
 }
 
-.modal-form__input:focus {
-  border: 1px solid var(--accent-link-color);
-}
+
 
 .modal-form__input:focus ~ .modal-form__icon {
   fill: var(--accent-link-color);

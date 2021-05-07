@@ -28,12 +28,14 @@
   border: 2px solid var(--icon-color);
   border-radius: 4px;
   transition: fill 250ms var(--animation);
+
+  &:hover,
+  &:focus {
+  border: 2px solid var(--accent-link-color);
+  }
 }
 
-.regular-clients__icon:hover,
-.regular-clients__icon:focus {
-  border: 2px solid var(--accent-link-color);
-}
+
 
 
 .regular-clients__icon:hover .regular-clients__client,

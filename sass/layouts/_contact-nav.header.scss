@@ -1,10 +1,16 @@
-.contact-nav.flex {
+.contact-nav {
   display: flex;
   margin-left: auto;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+
+  & :hover,
+  & :focus {
+   color: var(--accent-link-color);
+  }
+
 }
 
 .contact-nav__item {
@@ -20,12 +26,29 @@
   text-decoration-line: none;
   color: var(--main-text-color);
   transition: collor 250ms var(--animation);
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+  } 
+
+
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
 }
 
-.contact-nav :hover,
-.contact-nav :focus {
-  color: var(--accent-link-color);
-}
 
 
 .contact-nav__email,
@@ -35,26 +58,19 @@
   justify-content: center;
   padding: 32px 0;
   transform: fill 250ms var(--animation);
+
+  &:hover,
+  &:focus{
+    fill: var(--accent-link-color);
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-link-color);
+  }
 }
 
-.email-link:hover,
-.telephon-link:hover{
-  fill: var(--accent-link-color);
-}
-.email-link:focus,
-.telephon-link:focus {
-  fill: var(--accent-link-color);
-}
 
-
-.email-link::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-} 
 
 .icon-email {
   fill: currentColor;
@@ -62,13 +78,6 @@
 
 }
 
-
-.telephon-link::before {
-  content: "";
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 .icon-telephone {
   fill: currentColor;

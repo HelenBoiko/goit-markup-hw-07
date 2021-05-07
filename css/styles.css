@@ -88,76 +88,16 @@ button {
   transition: bacgraun-color 250ms var(--animation);
 }
 
-.button:hover,
-.button:focus {
+button:hover, button:focus {
   color: var(--button-color);
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
   background-color: var(--accent-link-color);
   border-radius: 4px;
 }
 
-.button:active {
+button:active {
   color: var(--button-color);
   background-color: var(--accent-link-color);
-}
-
-.mail-form__button {
-  display: flex;
-  width: 200px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.87;
-  color: #FFFFFF;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.mail-form__button::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url("../imeges/icon-send.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.portfolio-button {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding-left: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.portfolio-button__item {
-  display: flex;
-  margin-right: 8px;
-}
-
-.portfolio-button__item:hover,
-.portfolio-button__item:focus {
-  color: var(--bg-color);
-  background-color: var(--accent-link-color);
-}
-
-.portfolio-button__first-one {
-  color: var(--button-color);
-  background-color: var(--accent-link-color);
-}
-
-.portfolio-button__item {
-  display: inline-block;
-  border: 0;
-  color: var(--title-color);
-  background-color: var(--button-color);
 }
 
 .logo {
@@ -213,8 +153,7 @@ button {
   transition: background-color, fill 250ms var(--animation);
 }
 
-.icon-social__link:hover,
-.icon-social__link:focus {
+.icon-social__link:hover, .icon-social__link:focus {
   background-color: var(--accent-link-color);
 }
 
@@ -255,21 +194,8 @@ button {
   transition: color 250ms var(--animation);
 }
 
-.list-nav__link:hover,
-.list-nav__link:focus {
+.list-nav__link:hover, .list-nav__link:focus {
   color: var(--accent-link-color);
-}
-
-.list-nav__current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background: #2196F3;
-  border-radius: 4px;
-  transition: background 250ms var(--animation);
 }
 
 .list-nav {
@@ -292,6 +218,18 @@ button {
 
 .list-nav__current {
   color: var(--accent-link-color);
+}
+
+.list-nav__current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 4px;
+  transition: background 250ms var(--animation);
 }
 
 .section {
@@ -386,8 +324,7 @@ button {
   transition: fill 250ms var(--animation);
 }
 
-.close-modal:hover,
-.close-modal:focus {
+.close-modal:hover, .close-modal:focus {
   fill: var(--accent-link-color);
   border: 1px solid var(--accent-link-color);
 }
@@ -538,13 +475,18 @@ button {
   align-items: center;
 }
 
-.contact-nav.flex {
+.contact-nav {
   display: flex;
   margin-left: auto;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+}
+
+.contact-nav :hover,
+.contact-nav :focus {
+  color: var(--accent-link-color);
 }
 
 .contact-nav__item {
@@ -562,9 +504,24 @@ button {
   transition: collor 250ms var(--animation);
 }
 
-.contact-nav :hover,
-.contact-nav :focus {
-  color: var(--accent-link-color);
+.contact-nav__email::before,
+.contact-nav__telephon::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-nav__email::before,
+.contact-nav__telephon::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contact-nav__email,
@@ -576,35 +533,21 @@ button {
   transform: fill 250ms var(--animation);
 }
 
-.email-link:hover,
-.telephon-link:hover {
+.contact-nav__email:hover, .contact-nav__email:focus,
+.contact-nav__telephon:hover,
+.contact-nav__telephon:focus {
   fill: var(--accent-link-color);
 }
 
-.email-link:focus,
-.telephon-link:focus {
+.contact-nav__email:hover, .contact-nav__email:focus,
+.contact-nav__telephon:hover,
+.contact-nav__telephon:focus {
   fill: var(--accent-link-color);
-}
-
-.email-link::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .icon-email {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.telephon-link::before {
-  content: "";
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .icon-telephone {
@@ -853,8 +796,7 @@ button {
   transition: fill 250ms var(--animation);
 }
 
-.regular-clients__icon:hover,
-.regular-clients__icon:focus {
+.regular-clients__icon:hover, .regular-clients__icon:focus {
   border: 2px solid var(--accent-link-color);
 }
 
@@ -908,6 +850,31 @@ button {
   color: var(--bg-adress-color);
 }
 
+.mail-form__button {
+  display: flex;
+  width: 200px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #FFFFFF;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.mail-form__button::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url("../imeges/icon-send.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .contact-nav__link + .contact-nav__link {
   margin-top: 9px;
 }
@@ -941,6 +908,39 @@ button {
   padding-bottom: 94px;
 }
 
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.portfolio-button__item {
+  display: flex;
+  margin-right: 8px;
+}
+
+.portfolio-button__item:hover, .portfolio-button__item:focus {
+  color: var(--bg-color);
+  background-color: var(--accent-link-color);
+}
+
+.portfolio-button__first-one {
+  color: var(--button-color);
+  background-color: var(--accent-link-color);
+}
+
+.portfolio-button__item {
+  display: inline-block;
+  border: 0;
+  color: var(--title-color);
+  background-color: var(--button-color);
+}
+
 .card-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -956,6 +956,10 @@ button {
   border: 1px solid #eee;
 }
 
+.item-portfolio:hover, .item-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .item-portfolio:last-child {
   margin-right: 0;
 }
@@ -964,20 +968,15 @@ button {
   margin-right: 0;
 }
 
-.item-portfolio__icon:hover .text-item-portfolio,
-.item-portfolio__icon:focus .text-item-portfolio {
-  transform: translateY(0);
-}
-
 .item-portfolio__icon {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms var(--animation);
 }
 
-.item-portfolio:hover,
-.iiem-portfolio:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.item-portfolio__icon:hover .text-item-portfolio,
+.item-portfolio__icon:focus .text-item-portfolio {
+  transform: translateY(0);
 }
 
 .text-paragraf {

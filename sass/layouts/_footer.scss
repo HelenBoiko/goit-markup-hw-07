@@ -45,3 +45,31 @@
   list-style: none;
   color: var(--bg-adress-color);
 }
+
+.mail-form__button {
+  display: flex;
+  width: 200px;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  font-size: 16px;
+  line-height: 1.87;
+  
+  color: #FFFFFF;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.mail-form__button::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url("../imeges/icon-send.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
