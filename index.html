@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
@@ -413,20 +413,20 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="close-modal" data-modal-close>
-          <svg class="icon-close">
+          <svg class="close-modal__icon">
             <use href="./imeges/sprite.close.svg#icon-Vector"></use>
           </svg>
         </button>
 
         <form class="modal-form">
-          <p class="modal-text">
+          <p class="modal-form__text">
             Оставьте свои данные, мы вам перезвоним
           </p>
-          <div class="form-field">
-          <label for="name" class="form-label">Имя</label>
-          <input type="text" class="form-input" name="name" id="name" />
-          <span class="form-icon">
-            <svg class="form-name-icon">
+          <div class="modal-form__field">
+          <label for="name" class="">Имя</label>
+          <input type="text" class="modal-form__input" name="name" id="name" />
+          <span class="modal-form__icon">
+            <svg class="modal-form__name-icon">
               <use href="./imeges/icons.svg#icon-person-modal">
             
               </use>
@@ -435,15 +435,15 @@
           
           </div>
 
-          <div class="form-field">
-          <label for="tel" class="form-label">Телефон</label> 
+          <div class="modal-form__field">
+          <label for="tel" class="">Телефон</label> 
           <input
-           type="text" class="form-input"
+           type="text" class="modal-form__input"
            name="tel" 
            id="tel"
            />
-          <span class="form-icon">
-            <svg class="form-name-icon">
+          <span class="modal-form__icon">
+            <svg class="modal-form__name-icon">
               <use href="./imeges/icons.svg#icon-phone-modal">
             
               </use>
@@ -451,15 +451,15 @@
           </span>
           </div>
 
-          <div class="form-field">
-          <label for="mail" class="form-label">Почта</label>
+          <div class="modal-form__field">
+          <label for="mail" class="">Почта</label>
           <input 
-          type="text" class="form-input"
+          type="text" class="modal-form__input"
           name="mail" 
           id="mail"
           />
-          <span class="form-icon">
-            <svg class="form-name-icon">
+          <span class="modal-form__icon">
+            <svg class="modal-form__name-icon">
               <use href="./imeges/icons.svg#icon-email-modal">
 
               </use>
@@ -467,7 +467,7 @@
           </span>
           </div>
 
-          <div class="form-field">
+          <div class="modal-form__field">
           <label for="coment">Комментарий</label>
           <textarea class="coment"
           name="coment" 
@@ -475,18 +475,18 @@
           cols="30" rows="10" placeholder="Введите текст"></textarea>
           </div>
          
-          <div class="form-checkbox">
-          <label class="label-box"
+          <div class="checkbox">
+          <label class="checkbox__label"
           for="accept">
-          <input class="checkbox" type="checkbox" name="accept" id="accept"/>
-          <span class="box-icon"></span>
+          <input class="checkbox__input" type="checkbox" name="accept" id="accept"/>
+          <span class="checkbox__icon"></span>
           
           Соглашаюсь с рассылкой и принимаю 
-          <a href="" class="modal-link"> Условия договора</a>
+          <a href="" class="checkbox__link"> Условия договора</a>
           </label>
           </div>
 
-          <button type="submit">Отправить</button>
+          <button class="modal-button" type="submit">Отправить</button>
           
          </form>
       </div>
