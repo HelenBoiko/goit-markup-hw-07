@@ -88,14 +88,14 @@ button {
   transition: bacgraun-color 250ms var(--animation);
 }
 
-button:hover, button:focus {
+.button:hover, .button:focus {
   color: var(--button-color);
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
   background-color: var(--accent-link-color);
   border-radius: 4px;
 }
 
-button:active {
+.button:active {
   color: var(--button-color);
   background-color: var(--accent-link-color);
 }
